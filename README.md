@@ -51,6 +51,7 @@ Add a Manual Card to desired Lovelace View and paste the following code.
 - Update each entity code to reflect the integration entity, for example - entity: climate.lounge
 - Update each coresponding text code for each - type: custom:text-element, for example - text: Lounge
 - Update each service entry in the card to match the script names for each zone, for example - service: script.lounge_temp_down
+- Update the IP address field for each state_image for example replace 0.0.0.0 with HA IP address
 
 # Lovelace Card
 
@@ -74,12 +75,12 @@ elements:
       title: null
       width: 5%
     state_image:
-      cool: http://192.168.86.25:8123/local/airtouch/power_on.png
-      fan_only: http://192.168.86.25:8123/local/airtouch/power_on.png
-      dry: http://192.168.86.25:8123/local/airtouch/power_on.png
-      heat: http://192.168.86.25:8123/local/airtouch/power_on.png
-      auto: http://192.168.86.25:8123/local/airtouch/power_on.png
-      'off': http://192.168.86.25:8123/local/airtouch/power_off.png
+      cool: http://0.0.0.0:8123/local/airtouch/power_on.png
+      fan_only: http://0.0.0.0:8123/local/airtouch/power_on.png
+      dry: http://0.0.0.0:8123/local/airtouch/power_on.png
+      heat: http://0.0.0.0:8123/local/airtouch/power_on.png
+      auto: http://0.0.0.0:8123/local/airtouch/power_on.png
+      'off': http://0.0.0.0:8123/local/airtouch/power_off.png
   - type: image
     entity: climate.lounge
     style:
@@ -88,8 +89,8 @@ elements:
       title: null
       width: 4%
     state_image:
-      fan_only: http://192.168.86.25:8123/local/airtouch/power_on.png
-      'off': http://192.168.86.25:8123/local/airtouch/power_off.png
+      fan_only: http://0.0.0.0:8123/local/airtouch/power_on.png
+      'off': http://0.0.0.0:8123/local/airtouch/power_off.png
   - type: custom:text-element
     text: Lounge
     style:
@@ -140,8 +141,8 @@ elements:
       title: null
       width: 4%
     state_image:
-      fan_only: http://192.168.86.25:8123/local/airtouch/power_on.png
-      'off': http://192.168.86.25:8123/local/airtouch/power_off.png
+      fan_only: http://0.0.0.0:8123/local/airtouch/power_on.png
+      'off': http://0.0.0.0:8123/local/airtouch/power_off.png
   - type: custom:text-element
     text: Kitchen
     style:
@@ -183,8 +184,8 @@ elements:
       title: null
       width: 4%
     state_image:
-      fan_only: http://192.168.86.25:8123/local/airtouch/power_on.png
-      'off': http://192.168.86.25:8123/local/airtouch/power_off.png
+      fan_only: http://0.0.0.0:8123/local/airtouch/power_on.png
+      'off': http://0.0.0.0:8123/local/airtouch/power_off.png
   - type: custom:text-element
     text: Powder
     style:
@@ -226,8 +227,8 @@ elements:
       title: null
       width: 4%
     state_image:
-      fan_only: http://192.168.86.25:8123/local/airtouch/power_on.png
-      'off': http://192.168.86.25:8123/local/airtouch/power_off.png
+      fan_only: http://0.0.0.0:8123/local/airtouch/power_on.png
+      'off': http://0.0.0.0:8123/local/airtouch/power_off.png
   - type: custom:text-element
     text: Office
     style:
@@ -278,8 +279,8 @@ elements:
       title: null
       width: 4%
     state_image:
-      fan_only: http://192.168.86.25:8123/local/airtouch/power_on.png
-      'off': http://192.168.86.25:8123/local/airtouch/power_off.png
+      fan_only: http://0.0.0.0:8123/local/airtouch/power_on.png
+      'off': http://0.0.0.0:8123/local/airtouch/power_off.png
   - type: custom:text-element
     text: Master
     style:
@@ -330,8 +331,8 @@ elements:
       title: null
       width: 4%
     state_image:
-      fan_only: http://192.168.86.25:8123/local/airtouch/power_on.png
-      'off': http://192.168.86.25:8123/local/airtouch/power_off.png
+      fan_only: http://0.0.0.0:8123/local/airtouch/power_on.png
+      'off': http://0.0.0.0:8123/local/airtouch/power_off.png
   - type: custom:text-element
     text: Ethan
     style:
@@ -382,8 +383,8 @@ elements:
       title: null
       width: 4%
     state_image:
-      fan_only: http://192.168.86.25:8123/local/airtouch/power_on.png
-      'off': http://192.168.86.25:8123/local/airtouch/power_off.png
+      fan_only: http://0.0.0.0:8123/local/airtouch/power_on.png
+      'off': http://0.0.0.0:8123/local/airtouch/power_off.png
   - type: custom:text-element
     text: Alexis
     style:
@@ -434,8 +435,8 @@ elements:
       title: null
       width: 4%
     state_image:
-      fan_only: http://192.168.86.25:8123/local/airtouch/power_on.png
-      'off': http://192.168.86.25:8123/local/airtouch/power_off.png
+      fan_only: http://0.0.0.0:8123/local/airtouch/power_on.png
+      'off': http://0.0.0.0:8123/local/airtouch/power_off.png
   - type: custom:text-element
     text: Garage
     style:
@@ -477,12 +478,12 @@ elements:
       title: null
       width: 10%
     state_image:
-      cool: http://192.168.86.25:8123/local/airtouch/mode_cool.png
-      fan_only: http://192.168.86.25:8123/airtouch/local/mode_fan_only.png
-      dry: http://192.168.86.25:8123/local/airtouch/mode_dry.png
-      heat: http://192.168.86.25:8123/local/airtouch/mode_heat.png
-      auto: http://192.168.86.25:8123/local/airtouch/mode_auto.png
-      'off': http://192.168.86.25:8123/local/airtouch/power_off.png
+      cool: http://0.0.0.0:8123/local/airtouch/mode_cool.png
+      fan_only: http://0.0.0.0:8123/airtouch/local/mode_fan_only.png
+      dry: http://0.0.0.0:8123/local/airtouch/mode_dry.png
+      heat: http://0.0.0.0:8123/local/airtouch/mode_heat.png
+      auto: http://0.0.0.0:8123/local/airtouch/mode_auto.png
+      'off': http://0.0.0.0:8123/local/airtouch/power_off.png
   - type: state-label
     entity: climate.ac_0
     style:
@@ -501,10 +502,10 @@ elements:
       title: null
       width: 10%
     state_image:
-      low: http://192.168.86.25:8123/local/fan_low.png
-      medium: http://192.168.86.25:8123/local/fan_med.png
-      high: http://192.168.86.25:8123/local/fan_high.png
-      auto: http://192.168.86.25:8123/local/fan_auto.png
+      low: http://0.0.0.0:8123/local/fan_low.png
+      medium: http://0.0.0.0:8123/local/fan_med.png
+      high: http://0.0.0.0:8123/local/fan_high.png
+      auto: http://0.0.0.0:8123/local/fan_auto.png
   - type: state-label
     entity: climate.ac_0
     style:
@@ -516,10 +517,11 @@ elements:
     attribute: fan_mode
 entity: climate.ac_0
 state_image:
-  'off': http://192.168.86.25:8123/local/airtouch/airtouch_cool.png
-  cool: http://192.168.86.25:8123/local/airtouch/airtouch_cool.png
-  fan_only: http://192.168.86.25:8123/local/airtouch/airtouch_fan_only.png
-  dry: http://192.168.86.25:8123/local/airtouch/airtouch_dry.png
-  heat: http://192.168.86.25:8123/local/airtouch/airtouch_heat.png
-  auto: http://192.168.86.25:8123/local/airtouch/airtouch_cool.png
+  'off': http://0.0.0.0:8123/local/airtouch/airtouch_cool.png
+  cool: http://0.0.0.0:8123/local/airtouch/airtouch_cool.png
+  fan_only: http://0.0.0.0:8123/local/airtouch/airtouch_fan_only.png
+  dry: http://0.0.0.0:8123/local/airtouch/airtouch_dry.png
+  heat: http://0.0.0.0:8123/local/airtouch/airtouch_heat.png
+  auto: http://0.0.0.0:8123/local/airtouch/airtouch_cool.png
+
   ```
