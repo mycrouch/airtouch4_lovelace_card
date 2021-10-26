@@ -4,7 +4,7 @@ A custom Lovelace card for the AirTouch4 Integration
 <img width="494" alt="airtouch _card" src="https://user-images.githubusercontent.com/59326901/138863952-e8635789-a3b3-4bb3-b973-6004e05235e1.png">
 
 # Prerequsites
-The AirTouch4 Integration 
+The AirTouch4 Integration
 https://www.home-assistant.io/integrations/airtouch4/
 https://github.com/home-assistant/core/tree/dev/homeassistant/components/airtouch4
 
