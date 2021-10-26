@@ -479,7 +479,7 @@ elements:
       width: 10%
     state_image:
       cool: http://0.0.0.0:8123/local/airtouch/mode_cool.png
-      fan_only: http://0.0.0.0:8123/airtouch/local/mode_fan_only.png
+      fan_only: http://0.0.0.0:8123/local/airtouch/mode_fan_only.png
       dry: http://0.0.0.0:8123/local/airtouch/mode_dry.png
       heat: http://0.0.0.0:8123/local/airtouch/mode_heat.png
       auto: http://0.0.0.0:8123/local/airtouch/mode_auto.png
