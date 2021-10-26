@@ -502,10 +502,10 @@ elements:
       title: null
       width: 10%
     state_image:
-      low: http://0.0.0.0:8123/local/fan_low.png
-      medium: http://0.0.0.0:8123/local/fan_med.png
-      high: http://0.0.0.0:8123/local/fan_high.png
-      auto: http://0.0.0.0:8123/local/fan_auto.png
+      low: http://0.0.0.0:8123/local/airtouch/fan_low.png
+      medium: http://0.0.0.0:8123/local/airtouch/fan_med.png
+      high: http://0.0.0.0:8123/local/airtouch/fan_high.png
+      auto: http://0.0.0.0:8123/local/airtouch/fan_auto.png
   - type: state-label
     entity: climate.ac_0
     style:
