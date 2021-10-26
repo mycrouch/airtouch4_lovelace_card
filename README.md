@@ -494,7 +494,7 @@ elements:
       font-size: 100%
     state: null
   - type: image
-    entity: climate.ac_0
+    entity: fan_mode
     attribute: fan_mode
     style:
       top: 60%
