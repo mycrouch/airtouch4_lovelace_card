@@ -5,10 +5,12 @@ A custom Lovelace card for the AirTouch4 Integration
 
 # Prerequsites
 The AirTouch4 Integration
+
 https://www.home-assistant.io/integrations/airtouch4/
 https://github.com/home-assistant/core/tree/dev/homeassistant/components/airtouch4
 
 Text Element (Installed via HACS)
+
 https://github.com/custom-cards/text-element
 
 # Setup
