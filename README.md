@@ -18,7 +18,7 @@ Install the AirTouch4 integration, then the Frontend "Text Element" Repository v
 
 Add the airtouch folder from airtouch.zip into the www folder of the Home Assistant installation. 
 
-[airtouch.zip](https://github.com/mycrouch/airtouch4_lovelace_card/files/7417211/airtouch.zip)
+[airtouch.zip](https://github.com/mycrouch/airtouch4_lovelace_card/files/7425296/airtouch.zip)
 
 To enable the temperature up and down buttons on the card, scripts are required to call the climate.set_temperature service for each zone. Create two scripts for each zone (one up and one down) Example script code below and sample scripts.yaml available for download. Suggest a find and replace to update, for example replace lounge with zone name.
 
