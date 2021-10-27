@@ -46,6 +46,16 @@ lounge_temp_down:
   
 [scripts.yaml.zip](https://github.com/mycrouch/airtouch4_lovelace_card/files/7417349/scripts.yaml.zip)
 
+To obtain the fan state_attr for the -type: image used in this card there needs to be a fan mode sensor template as the -type image doesn't support an attribute variable like the state-lable does. Create a sensor template as per below to grab the current fan_mode attribute
+
+```
+sensor:
+  - platform: template
+    sensors:
+      fan_mode:
+        friendly_name: "Fan Mode"
+        value_template: "{{ (state_attr('climate.ac_0', 'fan_mode')) }}"
+```
 
 Add a Manual Card to desired Lovelace View and paste the following code. 
 - Update each entity code to reflect the integration entity, for example - entity: climate.lounge
@@ -483,7 +493,7 @@ elements:
       dry: http://0.0.0.0:8123/local/airtouch/mode_dry.png
       heat: http://0.0.0.0:8123/local/airtouch/mode_heat.png
       auto: http://0.0.0.0:8123/local/airtouch/mode_auto.png
-      'off': http://0.0.0.0:8123/local/airtouch/power_off.png
+      'off': http://0.0.0.0:8123/local/airtouch/mode_off.png
   - type: state-label
     entity: climate.ac_0
     style:
@@ -494,7 +504,7 @@ elements:
       font-size: 100%
     state: null
   - type: image
-    entity: fan_mode
+    entity: sensor.fan_mode
     attribute: fan_mode
     style:
       top: 60%
@@ -523,5 +533,4 @@ state_image:
   dry: http://0.0.0.0:8123/local/airtouch/airtouch_dry.png
   heat: http://0.0.0.0:8123/local/airtouch/airtouch_heat.png
   auto: http://0.0.0.0:8123/local/airtouch/airtouch_cool.png
-
   ```
