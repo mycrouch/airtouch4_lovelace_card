@@ -1,7 +1,7 @@
 # airtouch4_lovelace_card
 A custom Lovelace card for the AirTouch4 Integration
 
-<img width="493" alt="airtouch_card" src="https://user-images.githubusercontent.com/59326901/138891370-e5668f1f-a688-4f2d-8219-db15b89df234.png">
+<img width="493" alt="airtouch_card" src="https://user-images.githubusercontent.com/59326901/139514660-3467c780-f504-4a4d-a8b3-f6297967cacc.png">
 
 # Prerequisites
 The AirTouch4 Integration
